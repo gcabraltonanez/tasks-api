@@ -72,8 +72,6 @@ tasksController.updateTask = (req, res) => {
 
 	!tarea && res.status(400).send(`No existe la tarea con índice: ${index}`);
 
-	console.log('TAREA', tarea);
-
 	const tareaEdit = {
 		...tarea,
 		descripcion,
